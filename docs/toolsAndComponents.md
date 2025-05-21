@@ -22,3 +22,6 @@ pyenv global 3.11.9
 python --version
 
 output: Python 3.11.9
+
+for the Google chat - Whatsapp bridge we will use google chat API for creating a bot.
+the bot will recieve messages from the google chat user. the bot will send it to WhatsApp Business Cloud API which is a whatsapp business number. the WBN will send those messages to the whatsapp user, and the opposite for Whatsapp - Google chat.
