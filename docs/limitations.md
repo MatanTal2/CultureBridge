@@ -12,7 +12,7 @@
     Google Chat doesn't have a limit on the number of messages you can send back and forth in a chat, but it does have a limit on the size of individual messages. A message can be up to 32,000 bytes in size. To send a message larger than that, you'll need to send multiple messages. There is also a limit of 500 replies in inline threaded spaces.
 
 ## The way of using the service:
-    Gmail API
+    Google chat API
 
 # SMS
 
