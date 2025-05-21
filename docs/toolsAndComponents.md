@@ -14,3 +14,11 @@
 | Testing                        | Pytest, Postman, Swagger UI                    |
 | (Optional) Front-End Dashboard | React + Tailwind + Next.js                     |
 
+THE PYTHON VERSION HAS TO BE 3.11.9
+
+pyenv install 3.11.9
+pyenv global 3.11.9
+
+python --version
+
+output: Python 3.11.9
