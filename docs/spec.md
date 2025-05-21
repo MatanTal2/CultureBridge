@@ -1,10 +1,10 @@
 # CultureBridge - Technical Specification Document
 
 ## Project Overview
-CultureBridge is a multi-platform communication bridge service designed to connect WhatsApp, Email, and SMS, providing seamless message translation and adaptation across different platforms and cultural contexts.
+CultureBridge is a multi-platform communication bridge service designed to connect WhatsApp, Google chat, and SMS, providing seamless message translation and adaptation across different platforms and cultural contexts.
 
 ### One-Line Pitch
-A communication bridge service that translates and adapts messages between WhatsApp, Email, and SMS platforms, ensuring cultural context and tone are preserved across all channels.
+A communication bridge service that translates and adapts messages between WhatsApp, Google chat, and SMS platforms, ensuring cultural context and tone are preserved across all channels.
 
 ## Target Users
 1. Parents from diverse communities
@@ -19,7 +19,7 @@ A communication bridge service that translates and adapts messages between Whats
 - Communication barriers between cultural groups due to:
   - Language differences
   - Tone variations
-  - Preferred communication tools (WhatsApp vs Email vs SMS)
+  - Preferred communication tools (WhatsApp vs Google chat vs SMS)
   - Platform limitations
 - Results in:
   - Misunderstandings
@@ -37,7 +37,7 @@ Real-world cases of miscommunication between sectors such as:
 
 ### Core Features
 - Multi-platform message bridge service that:
-  - Connects WhatsApp, Email, and SMS platforms
+  - Connects WhatsApp, Google chat, and SMS platforms
   - Translates and adapts messages to appropriate cultural context
   - Maintains conversation threads across platforms
   - Handles platform-specific features (attachments, media, etc.)
@@ -86,7 +86,7 @@ Real-world cases of miscommunication between sectors such as:
   - POST /send-whatsapp
   - GET /whatsapp-status
 
-##### Email Integration
+##### Google chat Integration
 - Google Chat API integration
 - Message sending and receiving
 - Attachment handling
@@ -108,7 +108,7 @@ Real-world cases of miscommunication between sectors such as:
 #### 2. Core Service
 Responsibilities:
 - FastAPI application development
-- User mapping (WhatsApp ↔ Email ↔ SMS)
+- User mapping (WhatsApp ↔ Google chat ↔ SMS)
 - Service integration
 - Message logging
 - Cultural context database
@@ -137,7 +137,7 @@ Responsibilities:
   - python-whatsapp-sdk
   - requests
 
-##### Email
+##### Google chat
 - Service: Google Chat API
 - Authentication: OAuth2 (Google Cloud Console)
 - Libraries:
