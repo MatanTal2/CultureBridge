@@ -6,10 +6,10 @@
 ## The way of using the service:
     Whatsapp buisiness / Twilio
 
-# GMAIL
+# GOOGLE CHAT
 
-## how many messages can you send in gmail back and forth:
-   Gmail's daily sending limit for a standard account is 500 emails in a rolling 24-hour period. This limit applies to both sending and receiving messages. Work, school, and Workspace Individual accounts have a higher daily limit of 2,000 outgoing messages.
+## how many messages can you send in google chat back and forth:
+    Google Chat doesn't have a limit on the number of messages you can send back and forth in a chat, but it does have a limit on the size of individual messages. A message can be up to 32,000 bytes in size. To send a message larger than that, you'll need to send multiple messages. There is also a limit of 500 replies in inline threaded spaces.
 
 ## The way of using the service:
     Gmail API
