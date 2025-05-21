@@ -87,14 +87,14 @@ Real-world cases of miscommunication between sectors such as:
   - GET /whatsapp-status
 
 ##### Email Integration
-- Gmail API integration
-- Email sending and receiving
+- Google Chat API integration
+- Message sending and receiving
 - Attachment handling
 - Thread management
 - API Endpoints:
-  - POST /send-email
-  - GET /email-status
-  - POST /email-webhook
+  - POST /send-chat
+  - GET /chat-status
+  - POST /chat-webhook
 
 ##### SMS Integration
 - Twilio API integration
@@ -138,7 +138,7 @@ Responsibilities:
   - requests
 
 ##### Email
-- Service: Gmail API
+- Service: Google Chat API
 - Authentication: OAuth2 (Google Cloud Console)
 - Libraries:
   - google-api-python-client
@@ -188,7 +188,7 @@ Responsibilities:
 1. Set up development environment
 2. Create necessary accounts:
    - WhatsApp Business API
-   - Gmail API access
+   - Google Chat API access
    - Twilio API access
 3. Initialize project repository
 4. Implement platform integrations in parallel
