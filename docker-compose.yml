@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    command: uvicorn src.main:app --host 0.0.0.0 --port 8000 --reload
+    volumes:
+      - ./src:/app/src
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env # Load environment variables from .env file
+    depends_on:
+      - db
+      - redis
+    networks:
+      - culturebridge_net
+
+  db:
+    image: postgres:15
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-user} # Use from .env or default
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-password}
+      POSTGRES_DB: ${POSTGRES_DB:-culturebridge_db}
+    ports:
+      - "5432:5432" # Expose for local connections if needed, be careful in prod
+    networks:
+      - culturebridge_net
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    networks:
+      - culturebridge_net
+
+volumes:
+  postgres_data:
+
+networks:
+  culturebridge_net:
+    driver: bridge
