@@ -24,4 +24,15 @@ python --version
 output: Python 3.11.9
 
 for the Google chat - Whatsapp bridge we will use google chat API for creating a bot.
-the bot will recieve messages from the google chat user. the bot will send it to WhatsApp Business Cloud API which is a whatsapp business number. the WBN will send those messages to the whatsapp user, and the opposite for Whatsapp - Google chat.
+the bot will recieve messages from the google chat user. the bot will send it to WhatsApp Business Cloud API which
+is a whatsapp business number. the WBN will send those messages to the whatsapp user
+and the opposite for Whatsapp - Google chat.
+
+
+this is what we need to setup the whatsapp business cloud API:
+    ✅ Meta (Facebook) Developer Account
+    ✅ Facebook Business Account
+    ✅ Verified phone number (for production)
+    ✅ Basic knowledge of Node.js or Python (for coding)
+    ✅ Ngrok (for webhook testing)
+
